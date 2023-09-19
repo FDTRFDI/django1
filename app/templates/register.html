@@ -1,0 +1,66 @@
+{% include 'navbar.html'%}
+
+{% load static %}
+<!html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <style>
+            body {
+        
+                background: gray;
+        
+        
+            }
+
+
+            
+        </style>
+</head>
+<body>
+
+
+    <div class="container class="mb-3" class="maged">  
+<center> 
+<h1> hello new user </h1>
+<form action="" method="post" novalidate >
+{% csrf_token %}
+<div class="mb-3">
+<div class="mb-3">
+<label for="first_name" class="form-label">Firstname</label>
+<input type="text" class="form-control" id="first_name" placeholder=" Enter first_name">
+</div>
+<div class="mb-3">
+<label for="last_name" class="form-label">Lastname</label>
+<input type="text" class="form-control" id="last_name" placeholder=" Enter last_name">
+</div>
+<div class="mb-3">
+<label for="email" class="form-label">Email</label>
+<input type="text" class="form-control" id="email" placeholder=" Enter email">
+</div>
+<div class="mb-3">
+<label for="address" class="form-label">Address</label>
+<input type="text" class="form-control" id="address" placeholder="Enter address">
+</div>
+<div class="mb-3">
+<label for="phone" class="form-label">Phone</label>
+<input type="text" class="form-control" id="phone" placeholder="Enter phone">
+</div>
+<div class="mb-3">
+<label for="password" class="form-label">Password</label>
+<input type="text" class="form-control" id="password" placeholder="Enter password">
+</div>
+<div class="mb-3">
+<label for="descripation" class="form-label">Descripation</label>
+<input type="text" class="form-control" id="descripation" placeholder="Enter descripation">
+</div>
+
+</div>
+
+
+<input type="submit" value="submit">
+</form>
+</center>
+</div>
+</body>
+
+</html>

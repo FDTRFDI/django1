@@ -1,0 +1,40 @@
+
+{% load static %}
+<!html>
+
+    <head>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    </head>
+    <style>
+
+body{
+
+background: gray;
+
+
+}
+
+
+    </style>
+<body>
+    {% include 'navbar.html'%}
+    <div class="container class=" mb-3"">
+<center>
+<h1> hello user  </h1>
+<form action="" method="post" novalidate>
+{% csrf_token %}
+
+<div class="mb-3">
+<label for="name" class="form-label">name</label>
+<input type="text" class="form-control" id="name" placeholder=" Enter name">
+</div>
+<div class="mb-3">
+<label for="passsword" class="form-label">passsword</label>
+<input type="text" class="form-control" id="last_name" placeholder=" Enter passsword"><br></br>
+<input type="submit" value="submit">
+</form>
+</center>
+    </div>
+</body>
+
+</html>
